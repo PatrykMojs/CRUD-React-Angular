@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="personId">Id:</label>
+    <input 
+        type="number"
+        id="personId"
+        [(ngModel)]="personId"
+        name="personId"
+    />
+    <button type="submit">Usuń</button>
+</form>

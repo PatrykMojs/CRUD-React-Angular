@@ -1,0 +1,35 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="firstName">Imię:</label>
+    <input 
+        type="text"
+        id="firstname"
+        [(ngModel)]="person.firstName"
+        name="firstname"
+    />
+
+    <label for="lastName">Nazwisko:</label>
+    <input 
+        type="text"
+        id="lastName"
+        [(ngModel)]="person.lastName"
+        name="lastName"
+    />
+
+    <label for="dateOfBirth">Data urodzenia:</label>
+    <input 
+        type="date"
+        id="dateOfBirth"
+        [(ngModel)]="person.dateOfBirth"
+        name="dateOfBirth"
+    />
+
+    <label for="origin">Pochodzenie:</label>
+    <input 
+        type="text"
+        id="origin"
+        [(ngModel)]="person.origin"
+        name="origin"
+    />
+
+    <button type="submit">Dodaj</button>
+</form>
